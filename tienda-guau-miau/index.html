@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guau&Miau - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html" class="logo">HOME</a>
+        <a href="catalogo.html" class="link-catalogo">Catálogo</a>
+        <h1>GUAU&MIAU</h1>
+        <a href="registro.html" class="btn-nav">REGISTRARSE</a>
+    </nav>
+</header>
+<main>
+    <img src="img/tienda-mascotas.jpg" alt="Stand de la tienda Guau&Miau con vendedora y mascotas" class="imagen-banner">
+    <section class="form-container">
+        <h2>Inicio de Sesión</h2>
+        <form id="formLogin" novalidate>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo" 
+                    placeholder="usuario@duoc.cl"
+                    autocomplete="email"
+                    required>
+                <span class="error-mensaje" id="errorCorreo"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input 
+                    type="password" 
+                    id="contrasena" 
+                    name="contrasena" 
+                    autocomplete="current-password"
+                    required>
+                <span class="error-mensaje" id="errorContrasena"></span>
+            </div>
+
+            <button type="submit" class="btn-primario">Iniciar Sesión</button>
+            <p class="link-secundario">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Guau&Miau - Tienda de juguetes para mascotas</p>
+    <p>Contacto: contacto@guaumiau.cl | Teléfono: +56 9 1234 5678</p>
+</footer>
+<script src="js/login.js"></script>
+</body>
+</html>
